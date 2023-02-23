@@ -76,6 +76,10 @@ def main():
 
     artist_data = get_artist_data(token, artists_id)
 
+    if "error" in artist_data:
+        print("Error getting artist data.")
+        return
+
     while True:
         print(f"\nAvalable options: {', '.join(artist_data.keys())}")
         print("Enter option:")
