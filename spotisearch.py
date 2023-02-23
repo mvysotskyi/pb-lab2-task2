@@ -67,7 +67,8 @@ def main():
         print("Error getting token.")
         return
 
-    print("Enter artist name:")
+    print("Welcome to SpotiSearch!")
+    print("Please enter the name of the artist you want to search: ")
     artists_id = get_artist_id(token, input(">>> "))
 
     if artists_id is None:
